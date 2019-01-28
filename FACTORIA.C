@@ -2,12 +2,13 @@
 void main()
 {
 int i,t=1,a;
-clrscr();
-scanf("%d",&a);
+printf("input :");
 
+scanf("%d",&a);
+printf("output :\n");
 for(i=a;i>0;i--)
 {t=t*i;
 }
-printf("fact=%d",t);
+printf("%d",t);
 getch();
 }
