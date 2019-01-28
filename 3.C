@@ -7,6 +7,11 @@ int main()
     printf("Input :");
     scanf("%d",&a);
     printf("Output :\n");
+    if(a==0)
+    {
+        printf("invalid");
+        x=1;
+    }
     if(a==1)
     {
     printf("no");
