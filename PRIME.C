@@ -1,54 +1,29 @@
 #include<stdio.h>
 void main()
 {
-int a,b,c,j,i,z,x[20],k=0,y=0,m;
+int a,b,i=0,j=0,l=0,c=0;
 clrscr();
-scanf("%d",&z);
-while(z)
-{k=0;y=0;
-scanf("%d",&b);
-a=2;
-for(i=a;i<b;i++)
-{
-if(i>1)
-{
-if((i==2)||(i==3))
-{
-x[k]=i;
-k++;
-}
-else if((i%2==0)||(i%3==0))
-{
-continue;
-}
-else
-{ x[k]=i;
-k++;
-}
-}}
-/*for(i=0;i<k;i++)
- {
-  printf("%d ",x[i]);
-  } */
-    m=k; y=0;
-for(i=0;i<k;i++)
-  {
-   for(j=i+1;j<m;j++)
-     {
-      c=x[i]+x[j];
+scanf("%d%d",&a,&b);
 
-      if(c==b)
-      {printf("\n possible %d+%d=%d",x[i],x[j],c);
-      y=1;
-      break;
-      }
-      }
-   }
-    if(y==0)
-     {
-      printf("\n not possible");
-      }
- z--;
+for(i=a;i<=b;i++)
+{  c=0;
+   if(i==1)
+  {
+  printf("1 is neither prime nor composite");
  }
+
+ else
+ {
+
+  for(j=2;j<i;j++)
+  {if (i%j==0)
+     {c++;
+    }}
+   if(c==0)
+   {
+   printf("\n%d\t",i);
+   }
+
+  } }
 getch();
 }
