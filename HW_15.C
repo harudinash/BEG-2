@@ -2,16 +2,9 @@
 void main()
 {
  int a,b,c,d,e,g,x,r,v,p=1,l=0;
- 
- 
-
  printf("INPUT :");
  scanf("%d",&a);
  printf("OUTPUT :\n");
- 
- 
-  
-     
 	 c=a;d=a;e=a;l=0;p=1;x=0;
 	 while(a)
 	 {
@@ -42,9 +35,6 @@ void main()
 	    {
 	    printf("no");
 	    }
-	   
-
-	 
-    
+ 
  getch();
 }
