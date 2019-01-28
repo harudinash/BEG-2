@@ -2,10 +2,10 @@
 void main()
 {
 int a,b,i=0,j=0,l=0,c=0;
-clrscr();
+printf("input :");
 scanf("%d%d",&a,&b);
-
-for(i=a;i<=b;i++)
+printf("output :\n");
+for(i=a+1;i<=b;i++)
 {  c=0;
    if(i==1)
   {
@@ -21,7 +21,7 @@ for(i=a;i<=b;i++)
     }}
    if(c==0)
    {
-   printf("\n%d\t",i);
+   printf("%d ",i);
    }
 
   } }
